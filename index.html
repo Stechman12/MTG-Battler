@@ -11,10 +11,17 @@
     <h1>View a Magic The Gathering Card</h1>
     <input type="text" id="cardName" placeholder="Enter card name...">
     <button onclick="searchCard()">Search</button>
-    <div id="result"></div>
+    <div id="searchResult"></div>
 
     <button onclick="randomCommander()">Random Commander</button>
-    <div id="result"></div>
+    <div id="commanderResult"></div>
+
+    <button onclick="randomColorCombo()">Random Color Combo</button>
+    <div id="colorResult"></div>
+
+    <input type="text" id="colors" placeholder="Enter color combo as letters (ex: WUBRG)...">
+    <button onclick="randomCommanderColorCombo()">Search</button>
+    <div id="commanderComboResult"></div>
 
     <script src="script.js"></script>
 </body>
