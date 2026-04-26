@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #e8d5a3;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c9a84c;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
+}
+
+h2 {
+    color: #c9a84c;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid #c9a84c;
+    margin-bottom: 0;
+}
+
+.tab-btn {
+    background: #1a1a1a;
+    color: #a08040;
+    border: 1px solid #3a3a2a;
+    border-bottom: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-btn:hover {
+    background: #2a2a1a;
+    color: #e8d5a3;
+}
+
+.tab-btn.active {
+    background: #1e1a0e;
+    color: #c9a84c;
+    border-color: #c9a84c;
+    border-bottom: 2px solid #1e1a0e;
+    margin-bottom: -2px;
+}
+
+/* Tab panels */
+.tab-content {
+    background: #1e1a0e;
+    border: 1px solid #c9a84c;
+    border-top: none;
+    padding: 30px;
+    border-radius: 0 0 8px 8px;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* Inputs and buttons */
+input[type="text"] {
+    background: #111;
+    border: 1px solid #c9a84c;
+    color: #e8d5a3;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 8px;
+}
+
+input[type="text"]::placeholder {
+    color: #6a5a30;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #e8d5a3;
+    box-shadow: 0 0 6px rgba(201, 168, 76, 0.3);
+}
+
+button {
+    background: #2a1f00;
+    color: #c9a84c;
+    border: 1px solid #c9a84c;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: #c9a84c;
+    color: #0d0d0d;
+}
+
+/* Results */
+.result {
+    margin-top: 24px;
+}
+
+.result h2 {
+    margin-bottom: 10px;
+}
+
+.result img {
+    border-radius: 12px;
+    border: 2px solid #c9a84c;
+    box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+    max-width: 300px;
+    margin-top: 10px;
+}

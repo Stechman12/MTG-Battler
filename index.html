@@ -8,20 +8,44 @@
 </head>
 <body>
 
-    <h1>View a Magic The Gathering Card</h1>
-    <input type="text" id="cardName" placeholder="Enter card name...">
-    <button onclick="searchCard()">Search</button>
-    <div id="searchResult"></div>
+    <h1>MTG Card Viewer</h1>
 
-    <button onclick="randomCommander()">Random Commander</button>
-    <div id="commanderResult"></div>
+    <nav class="tabs">
+        <button class="tab-btn active" onclick="showTab('search', this)">Search Card</button>
+        <button class="tab-btn" onclick="showTab('commander', this)">Random Commander</button>
+        <button class="tab-btn" onclick="showTab('colorCombo', this)">Random Color Combo</button>
+        <button class="tab-btn" onclick="showTab('commanderByColor', this)">Commander by Color</button>
+    </nav>
 
-    <button onclick="randomColorCombo()">Random Color Combo</button>
-    <div id="colorResult"></div>
+    <div class="tab-content">
 
-    <input type="text" id="colors" placeholder="Enter color combo as letters (ex: WUBRG)...">
-    <button onclick="randomCommanderColorCombo()">Search</button>
-    <div id="commanderComboResult"></div>
+        <div id="search" class="tab-panel active">
+            <h2>Search for a Card</h2>
+            <input type="text" id="cardName" placeholder="Enter card name...">
+            <button onclick="searchCard()">Search</button>
+            <div id="searchResult" class="result"></div>
+        </div>
+
+        <div id="commander" class="tab-panel">
+            <h2>Random Commander</h2>
+            <button onclick="randomCommander()">Get Random Commander</button>
+            <div id="commanderResult" class="result"></div>
+        </div>
+
+        <div id="colorCombo" class="tab-panel">
+            <h2>Random Color Combo</h2>
+            <button onclick="randomColorCombo()">Roll Color Combo</button>
+            <div id="colorResult" class="result"></div>
+        </div>
+
+        <div id="commanderByColor" class="tab-panel">
+            <h2>Commander by Color</h2>
+            <input type="text" id="colors" placeholder="Enter colors as letters (ex: WUBRG)...">
+            <button onclick="randomCommanderColorCombo()">Search</button>
+            <div id="commanderComboResult" class="result"></div>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
