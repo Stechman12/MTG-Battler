@@ -28,6 +28,21 @@ h2 {
     letter-spacing: 1px;
 }
 
+/* New Page Buttons */
+.new-page-button {
+    background: #1a1a1a;
+    color: #a08040;
+    border: 1px solid #3a3a2a;
+    border-bottom: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px 4px 0 0;
+}
+
 /* Tabs */
 .tabs {
     display: flex;
